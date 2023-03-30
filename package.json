@@ -6,12 +6,22 @@
     "start": "remotion preview",
     "build": "remotion render HelloWorld out/video.mp4",
     "upgrade": "remotion upgrade",
-    "test": "eslint src --ext ts,tsx,js,jsx"
+    "test": "eslint src --ext ts,tsx,js,jsx",
+    "format": "prettier --write src/{*,**/*}.{js,jsx,md,mdx}"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all"
   },
   "repository": {},
   "license": "UNLICENSED",
   "dependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
     "@remotion/cli": "3.3.79",
+    "babel-loader": "^9.1.2",
+    "mdx-loader": "^3.0.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "remotion": "3.3.79"
@@ -19,7 +29,7 @@
   "devDependencies": {
     "@remotion/eslint-config": "3.3.79",
     "eslint": "^8.30.0",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.7"
   },
   "packageManager": "yarn@1.22.19"
 }
