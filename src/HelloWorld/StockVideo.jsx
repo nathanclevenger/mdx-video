@@ -1,4 +1,4 @@
-import { AbsoluteFill, staticFile, Video } from 'remotion';
+import { AbsoluteFill, staticFile, Video } from 'remotion'
  
 export const StockVideo = props => {
   return (
